@@ -1,0 +1,155 @@
+/*列表上方操作按钮区域*/
+.ant-card-body {
+  padding: 15px;
+}
+
+.ant-card-body .table-operator {
+  margin-bottom: 8px;
+}
+/** Button按钮间距 */
+.table-operator .ant-btn {
+  margin: 0 8px 8px 0;
+}
+.table-operator .ant-btn-group .ant-btn {
+  margin: 0;
+}
+
+.table-operator .ant-btn-group .ant-btn:last-child {
+  margin: 0 8px 8px 0;
+}
+/*列表td的padding设置 可以控制列表大小*/
+.ant-table-tbody .ant-table-row td {
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+// tabs选项卡
+.ant-tabs .ant-tabs-top-content,
+.ant-tabs .ant-tabs-bottom-content {
+  height: calc(100% - 65px);
+}
+
+/*列表页面弹出modal*/
+.ant-modal-cust-warp {
+  height: 100%;
+}
+
+/*弹出modal Y轴滚动条*/
+.ant-modal-cust-warp .ant-modal-body {
+  height: calc(100% - 110px) !important;
+  overflow-y: auto;
+}
+
+/*弹出modal 先有content后有body 故滚动条控制在body上*/
+.ant-modal-cust-warp .ant-modal-content {
+  height: 90% !important;
+  overflow-y: hidden;
+}
+/*列表中有图片的加这个样式 参考用户管理*/
+.anty-img-wrap {
+  height: 25px;
+  position: relative;
+}
+.anty-img-wrap > img {
+  max-height: 100%;
+}
+/*列表中范围查询样式*/
+.query-group-cust {
+  width: calc(50% - 10px);
+}
+.query-group-split-cust:before {
+  content: '~';
+  width: 20px;
+  display: inline-block;
+  text-align: center;
+}
+
+/*erp风格子表外框padding设置*/
+.ant-card-wider-padding.cust-erp-sub-tab > .ant-card-body {
+  padding: 5px 12px;
+}
+
+.ant-alert-info {
+  margin-bottom: 16px;
+}
+/* 内嵌子表背景颜色 */
+.j-inner-table-wrapper /deep/ .ant-table-expanded-row .ant-table-wrapper .ant-table-tbody .ant-table-row {
+  background-color: #ffffff;
+}
+// 抽屜
+.ant-drawer .ant-drawer-content {
+  overflow: hidden;
+}
+
+// 表格高度
+
+.table-cont {
+  height: calc(100% - 2rem);
+  .ant-table-wrapper {
+    height: 100%;
+  }
+  .ant-spin-nested-loading {
+    position: static;
+    height: 100%;
+    .ant-spin-container {
+      position: static;
+      height: 100%;
+      .ant-table {
+        height: 100%;
+        .ant-table-content {
+          height: 100%;
+          .ant-table-body-inner {
+            overflow-x: hidden;
+          }
+        }
+      }
+    }
+  }
+}
+
+.TableCardClass {
+  position: relative;
+  height: 100%;
+  .ant-card-body {
+    height: 100%;
+  }
+  .ant-table-pagination.ant-pagination {
+    position: absolute;
+    bottom: 0px;
+    left: 16px;
+  }
+}
+.maxHeight {
+  .ant-modal-body {
+    max-height: 750px;
+    overflow-y: auto;
+    position: relative;
+  }
+}
+
+.TableCardClassPosition {
+  position: static;
+}
+.mainContentHeight {
+  height: 100% !important;
+}
+
+// split面板分割
+.demo-split {
+  border: 1px solid #dcdee2;
+}
+.demo-split-pane {
+  padding: 10px;
+}
+.demo-split-pane.no-padding {
+  height: 100%;
+  padding: 0;
+}
+
+.table-cont {
+  .ant-table-thead {
+    tr th {
+      text-align: center !important;
+    }
+  }
+}
